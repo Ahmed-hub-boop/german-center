@@ -26,5 +26,6 @@ def HomeEn():
 
 
 if __name__ == "__main__":
-    APP.run(debug=True, port=7000)
+    APP.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
     
+
